@@ -15,6 +15,7 @@ var arn2 = "CCUCGCCGGUACUUCUCG"
 let splittedArn1 = arn1.match(/.{1,3}/g);
 let splittedArn2 = arn2.match(/.{1,3}/g);
 
+// On affiche l'array crée en séparant les codons de arn1
 console.log(splittedArn1)
 
 //On crée un array vide :
@@ -30,6 +31,10 @@ splittedArn1.forEach(codon => {
 
 //On joint les mots grâce à des "-" pour compléter la chaîne avec un .join puis on affiche le résultat :
 console.log(`ARN1 = ${output1.join("-")}`)
+
+
+// On affiche l'array crée en séparant les codons de arn2
+console.log(splittedArn2)
 
 //On crée un array vide 
 let output2 = [];

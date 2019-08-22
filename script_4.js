@@ -22,7 +22,7 @@ const entrepreneurs = [
 //on recherche dans un premier temps tous les objets dont la year est comprise entre 1970 et 1980
 let born70 = entrepreneurs.filter(entrepreneur => entrepreneur.year > 1969 && entrepreneur.year < 1980)
 
-//on affiche ensuite le prénom et le nom de chaque entrepreneur
+//on affiche ensuite le prénom et le nom de chaque entrepreneur né dans les années 70
 console.log("-> Les entrepreneurs nés dans les années 70 sont :")
 born70.forEach(entrepreneur => { console.log(`${entrepreneur.first} ${entrepreneur.last}`)});
 
